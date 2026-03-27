@@ -1,90 +1,101 @@
-<h1 align="center">Robert Kennedy</h1>
-<h3 align="center">Backend Developer · Go · APIs REST · Docker · PostgreSQL</h3>
+<h2 align="center">Robert Kennedy</h2>
+<h4 align="center">Backend Developer · Go · APIs REST · PostgreSQL · Docker</h4>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/robert-kennedy-034687369/">
-    <img src="https://img.shields.io/badge/LinkedIn-robert--kennedy-0A66C2?style=flat&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=flat&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:robert_unix@hotmail.com">
-    <img src="https://img.shields.io/badge/Email-robert__unix%40hotmail.com-D44638?style=flat&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-Contato-D44638?style=flat&logo=gmail&logoColor=white" />
   </a>
-  <img src="https://img.shields.io/badge/Localização-Manaus%2C%20AM-green?style=flat" />
-  <img src="https://img.shields.io/badge/Disponível-Remoto-1D9E75?style=flat" />
+  <img src="https://img.shields.io/badge/Disponível-Remoto%20%7C%20Júnior-1D9E75?style=flat" />
+  <img src="https://img.shields.io/badge/Manaus-AM%2C%20Brasil-555?style=flat" />
 </p>
 
 ---
 
-## Sobre mim
+Desenvolvo backends em Go com foco em **APIs REST**, **arquitetura modular** e **sistemas que precisam funcionar sob pressão**.
 
-Desenvolvedor Backend com foco em **Go**, construindo sistemas que precisam ser rápidos, confiáveis e escaláveis.
+Antes de migrar para desenvolvimento, trabalhei em ambientes de tecnologia de alta criticidade — setor militar e central de operações (CIOPS/AM) — onde sistemas que falham têm consequências reais. Esse background moldou meu jeito de escrever código: com atenção à resiliência, segurança e performance desde o início.
 
-Antes de migrar para desenvolvimento, passei anos em ambientes de tecnologia de alta criticidade — setor militar e central de operações (CIOPS/AM) — onde aprendi que sistemas que falham têm consequências reais. Isso moldou meu jeito de escrever código: com atenção à resiliência, segurança e performance desde o início.
+---
 
-Hoje aplico esse background no desenvolvimento de **backends em Go**, com arquitetura modular, APIs REST bem definidas e deploy containerizado.
+## Projetos
+
+### 🛒 [go-api-vitrine](https://github.com/robert-kennedy-devops/go-api-vitrine) — API REST CRUD em Go
+> Projeto de referência para recrutadores: código limpo, testado e documentado.
+
+```
+Stack  →  Go 1.21 · Echo v4 · PostgreSQL 16 · Docker
+Testes →  22 testes unitários · race detector limpo · sem dependência de banco
+```
+
+**Destaques técnicos:**
+- Arquitetura em 3 camadas: `handler` → `service` → `repository`
+- Repository pattern com interface — troca de storage (memória ↔ PostgreSQL) sem alterar o resto
+- PATCH parcial com ponteiros (`*string`, `*float64`) para distinguir campo ausente de zero value
+- Build multi-stage Docker: imagem final ~5MB em Alpine, sem código-fonte
+
+```bash
+git clone https://github.com/robert-kennedy-devops/go-api-vitrine
+go run ./cmd/api   # sobe em segundos, sem banco necessário
+```
+
+---
+
+### ⚔️ [tormenta-rpg-bot](https://github.com/robert-kennedy-devops/tormenta-rpg-bot) — MMORPG multiplayer no Telegram
+> Sistema de backend complexo, projetado para escalar até 1 milhão de usuários.
+
+```
+Stack  →  Go · PostgreSQL · Docker · Telegram Bot API
+Schema →  21 migrações SQL incrementais
+```
+
+**Destaques técnicos:**
+- Engine de combate desacoplada (`internal/engine/`) — sem efeitos colaterais, testável isoladamente
+- Event bus assíncrono com pool de 8 goroutines e fila de 10k slots
+- Camada de segurança dedicada: rate limiting por ação, dedup de callbacks, detecção de bot-pattern
+- Workers de background concorrentes: combate, economia, raids, eventos
+
+---
+
+### 🤖 [KeroBot](https://github.com/robert-kennedy-devops/KeroBot) — Cliente MTProto Telegram
+> Integração com protocolo MTProto nativo — nível abaixo da Bot API padrão.
+
+```
+Stack  →  Go · gotd/td · PostgreSQL · Docker
+```
+
+**Destaques técnicos:**
+- Protocolo MTProto via `gotd/td` — acesso direto à API do Telegram
+- Arquitetura event-driven com separação `pkg/` (público) e `internal/` (privado)
+- Logs estruturados · CHANGELOG versionado · Licença MIT
 
 ---
 
 ## Stack
 
-```
-Linguagem      Go (Golang)
-APIs           RESTful · Echo Framework · Telegram Bot API (MTProto)
-Banco de dados PostgreSQL · modelagem relacional · migrations SQL
-DevOps         Docker · Docker Compose · Linux (administração avançada)
-Práticas       Arquitetura modular · Clean Code · variáveis de ambiente · .gitignore correto
-```
-
----
-
-## Projetos em destaque
-
-### ⚔️ [tormenta-rpg-bot](https://github.com/robert-kennedy-devops/tormenta-rpg-bot)
-> MMORPG multiplayer para Telegram — arquitetura projetada para escalar até 1 milhão de usuários
-
-**Stack:** Go · PostgreSQL · Docker · Telegram Bot API
-
-**Destaques técnicos:**
-- Engine de combate modular (`internal/engine/`) com interfaces bem definidas, sem efeitos colaterais
-- Sistema de segurança dedicado (`internal/security/`) com rate limiting por ação, deduplicação de callbacks/transações, detecção de comportamento anômalo e logger JSON estruturado
-- Event bus com pool de goroutines e fila de 10k slots para comunicação assíncrona entre subsistemas
-- 21 migrações SQL incrementais com schema versionado
-- Workers de background (combate, economia, eventos, raids) com concorrência controlada
-- Camada de cache unificada com fallback mem → Redis
-
----
-
-### 🤖 [KeroBot](https://github.com/robert-kennedy-devops/KeroBot)
-> Cliente de usuário Telegram (MTProto) com automação de ações em estilo RPG
-
-**Stack:** Go · gotd/td · PostgreSQL · Docker
-
-**Destaques técnicos:**
-- Protocolo MTProto via `gotd/td` — nível mais baixo que a Bot API padrão
-- Arquitetura event-driven com separação entre `pkg/` (público/reutilizável) e `internal/`
-- Logs estruturados e configuração via `.env`
-- Licença MIT · CHANGELOG versionado
-
----
-
-## Background que trago para o código
-
-| Experiência | Aplicação no desenvolvimento |
+| | Tecnologia |
 |---|---|
-| Exército Brasileiro — Setor de Informática (2006–2007) | Disciplina operacional, sistemas sem tolerância a falhas |
-| CIOPS/AM — Monitoramento em tempo real (2010–2011) | Análise de incidentes, resposta rápida, logs e rastreabilidade |
-| 8+ anos como Técnico de TI (Slake Infor) | Infraestrutura, redes, Linux, diagnóstico de sistemas |
+| Linguagem | Go (Golang) |
+| APIs | RESTful · Echo Framework · Telegram Bot API · MTProto |
+| Banco de dados | PostgreSQL · SQL puro · migrations versionadas |
+| DevOps | Docker · Docker Compose · Linux |
+| Práticas | Repository pattern · injeção de dependência · testes unitários · race detector |
 
 ---
 
-## Em evolução contínua
+## Background
 
-- Testes em Go (unitários e de integração)
-- gRPC e comunicação entre microserviços
-- Redis para cache distribuído
-- Observabilidade (métricas, tracing)
+Anos em ambientes onde indisponibilidade não é opção:
+
+- **Exército Brasileiro** (2006–2007) — infraestrutura de missão crítica, zero tolerância a falhas
+- **CIOPS/AM** (2010) — monitoramento em tempo real, resposta a incidentes de alta prioridade
+- **Slake Infor** (2017–hoje) — gestão de servidores Linux em produção, redes, troubleshooting avançado
 
 ---
 
 <p align="center">
-  <i>Aberto a oportunidades de Backend Júnior — 100% remoto · Manaus, AM</i>
+  <i>Aberto a oportunidades Backend Júnior · 100% remoto · Manaus, AM</i><br>
+  <a href="https://www.linkedin.com/in/robert-kennedy-034687369/">linkedin.com/in/robert-kennedy-034687369</a>
 </p>
