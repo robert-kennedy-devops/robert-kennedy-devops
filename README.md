@@ -12,6 +12,16 @@
   <img src="https://img.shields.io/badge/Manaus-AM%2C%20Brasil-555?style=flat" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Echo-Framework-00ACD7?style=flat&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/REST-API-6BA539?style=flat" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+</p>
+
 ---
 
 Desenvolvo backends em Go com foco em **APIs REST**, **arquitetura modular** e **sistemas que precisam funcionar sob pressão**.
