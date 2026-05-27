@@ -241,7 +241,6 @@ preparado para evolução
 
 ---
 
-## Contato
 
 <p align="center">
   <b>Aberto a oportunidades Backend Júnior · Remoto · Manaus, AM</b><br><br>
