@@ -45,7 +45,7 @@ Go · APIs REST · PostgreSQL · Docker · Linux · Testes · Cloud básico
 
 ## Projeto de estudo estruturado
 
-### 📘 [Project Management API em Go](https://github.com/robert-kennedy-devops/project-management-api-go) — Roadmap de portfólio backend
+### 📘 [E-book: Backend Júnior com Go]([https://github.com/robert-kennedy-devops/Backend-junior-com-go]) — Roadmap de portfólio backend
 
 Projeto/roadmap técnico para consolidar fundamentos de backend júnior usando Go.
 
