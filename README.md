@@ -45,7 +45,7 @@ Go · APIs REST · PostgreSQL · Docker · Linux · Testes · Cloud básico
 
 ## Projeto de estudo estruturado
 
-### 📘 Project Management API em Go — Roadmap de portfólio backend
+### 📘 [Project Management API em Go](https://github.com/robert-kennedy-devops/project-management-api-go) — Roadmap de portfólio backend
 
 Projeto/roadmap técnico para consolidar fundamentos de backend júnior usando Go.
 
@@ -70,7 +70,7 @@ Construir uma API REST realista para gerenciamento de projetos, tarefas, membros
 - Cache com Redis
 - Healthcheck, readiness e logs estruturados
 
-> Repositório recomendado para este material: `project-management-api-go`.
+**Repositório:** https://github.com/robert-kennedy-devops/project-management-api-go
 
 ---
 
