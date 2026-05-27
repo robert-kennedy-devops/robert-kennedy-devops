@@ -54,23 +54,43 @@ Stack  → Go · PostgreSQL · Docker · JWT · Redis · Swagger/OpenAPI · Test
 Escopo → API REST · Auth · CRUD · Migrations · Arquitetura em camadas · Deploy
 ```
 
-**Objetivo técnico:**
+# E-book: Backend Júnior com Go
 
-Construir uma API REST realista para gerenciamento de projetos, tarefas, membros e comentários, cobrindo autenticação, autorização, persistência, documentação, testes automatizados e deploy.
+Material de estudo em formato de e-book para quem deseja iniciar ou consolidar fundamentos de desenvolvimento backend usando **Go**, **APIs REST**, **PostgreSQL**, **Docker**, **testes**, **documentação técnica** e **cloud básico**.
 
-**Competências demonstradas:**
+Este repositório existe para distribuição do e-book e como material complementar de portfólio.
 
-- Modelagem de domínio com usuários, projetos, tarefas, membros e comentários
-- Arquitetura em camadas: `handler` → `service` → `repository`
-- Autenticação com JWT e senha com bcrypt
-- PostgreSQL com migrations versionadas
-- Dockerfile e Docker Compose
-- Testes unitários e de integração
-- Documentação Swagger/OpenAPI
-- Cache com Redis
-- Healthcheck, readiness e logs estruturados
+## Sobre o e-book
 
-**Repositório:** https://github.com/robert-kennedy-devops/project-management-api-go
+**Título:** Backend Júnior com Golang, PostgreSQL, Docker, APIs e Cloud  
+**Autor:** Robert Kennedy  
+**Formato:** PDF  
+**Público-alvo:** iniciantes em desenvolvimento backend, estudantes de programação e pessoas em transição para primeira vaga júnior.
+
+## Objetivo
+
+Apresentar uma trilha prática e didática para estudar backend com Go, cobrindo desde conceitos básicos de programação até tópicos usados em projetos reais.
+
+O conteúdo aborda:
+
+- fundamentos de desenvolvimento backend;
+- introdução à linguagem Go;
+- variáveis, tipos, funções, structs, interfaces e tratamento de erros;
+- controle de fluxo com `if`, `else`, `switch` e `for`;
+- HTTP, REST e JSON;
+- PostgreSQL e SQL;
+- migrations;
+- arquitetura em camadas;
+- autenticação com JWT;
+- Docker e Docker Compose;
+- testes unitários e de integração;
+- Swagger/OpenAPI;
+- Redis, cache e filas;
+- logs e observabilidade;
+- deploy em cloud;
+- projeto final de portfólio;
+- glossário de siglas;
+- roteiro de entrevista técnica.
 
 ---
 
