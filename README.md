@@ -1,6 +1,6 @@
 <h1 align="center">Robert Kennedy</h1>
 
-<h3 align="center">Backend Developer Jr. · Go · APIs REST · PostgreSQL · Docker · Linux</h3>
+<h3 align="center">Backend Developer. · Go · APIs REST · PostgreSQL · Docker · Linux</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/robert-kennedy-034687369/">
