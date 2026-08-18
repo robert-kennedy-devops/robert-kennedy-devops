@@ -35,7 +35,7 @@ Sou desenvolvedor backend em formação profissional, com foco em **Go**, **APIs
 
 Antes de focar em desenvolvimento de software, atuei em ambientes de tecnologia onde disponibilidade, segurança e resposta a incidentes importam de verdade: administração de servidores Linux, redes, troubleshooting, operação técnica e suporte a ambientes críticos. Esse histórico influencia meu estilo de engenharia: prefiro soluções objetivas, observáveis, documentadas e preparadas para manutenção.
 
-Atualmente busco oportunidades como **Backend Developer Júnior**, com foco em:
+Atualmente busco oportunidades como **Backend Developer**, com foco em:
 
 ```text
 Go · APIs REST · PostgreSQL · Docker · Linux · Testes · Cloud básico
